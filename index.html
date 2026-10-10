@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COFFEE LAB • Заказ кофе</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>COFFEE LAB</h1>
+    <p>Ваш кофе. Ваш вкус. Ваш момент.</p>
+</header>
+
+<main>
+
+    <section class="preview">
+        <div class="fresh">СВЕЖЕПРИГОТОВЛЕННЫЙ</div>
+
+        <div class="cup-area">
+            <div class="steam" id="steam">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <div class="cup-handle"></div>
+
+            <div class="cup">
+                <div class="coffee" id="coffee"></div>
+                <div class="logo">C</div>
+            </div>
+        </div>
+
+        <h2 id="drink">Classic Coffee</h2>
+        <div class="volume" id="volume">Средний / 300 мл</div>
+
+        <p class="footer-note">
+            Обжарено с заботой<br>
+            Приготовлено для вас
+        </p>
+    </section>
+
+
+    <section class="builder">
+
+        <h2>Соберите свой кофе</h2>
+
+        <div class="card">
+            <h3>01&nbsp;&nbsp; Размер стакана</h3>
+
+            <label>
+                <input type="radio" name="size" value="Маленький">
+                Маленький • 200 мл / 100 ₽
+            </label>
+
+            <label>
+                <input type="radio" name="size" value="Средний" checked>
+                Средний • 300 мл / 150 ₽
+            </label>
+
+            <label>
+                <input type="radio" name="size" value="Большой">
+                Большой • 400 мл / 200 ₽
+            </label>
+        </div>
+
+
+        <div class="card">
+            <h3>02&nbsp;&nbsp; Добавки</h3>
+
+            <label>
+                <input type="checkbox" id="syrup">
+                Сироп / +30 ₽
+            </label>
+
+            <label>
+                <input type="checkbox" id="milk">
+                Молоко / +20 ₽
+            </label>
+
+            <label>
+                <input type="checkbox" id="ice">
+                Лед / +10 ₽
+            </label>
+        </div>
+
+
+        <div class="hint" id="hint">
+            Можно выбрать несколько добавок.
+        </div>
+
+        <div class="summary" id="summary"></div>
+
+        <button id="calculate">
+            Рассчитать стоимость →
+        </button>
+
+        <div class="result" id="result">
+            Нажмите «Рассчитать»
+        </div>
+
+        <button class="reset" id="reset">
+            Сбросить выбор
+        </button>
+
+    </section>
+
+</main>
+
+<script src="script.js"></script>
+
+</body>
+</html>
